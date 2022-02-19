@@ -1,0 +1,41 @@
+@import "common.css";
+
+.wrapper {
+	height: 100vh;
+}
+
+/* Header */
+
+.main_header {
+	width: 100%;
+	height: calc((100vh - var(--footer_height)) * var(--header_procent));
+}
+
+
+/* Мain */
+
+main {
+	height: calc((100vh - var(--footer_height)) *  (1 - var(--header_procent)));
+}
+ 
+.timetable {
+	padding: 0 20%;
+	height: 100%;
+	overflow: scroll;
+}
+
+.timetable__img {
+	height: 100%;
+	width: 3000px;
+}
+
+
+/* Footer */
+
+footer {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	padding: 0 2%;
+	height: var(--footer_height);
+}

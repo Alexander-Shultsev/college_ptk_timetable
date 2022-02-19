@@ -1,0 +1,41 @@
+::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
+
+:root {
+	--footer_height: 50px;
+	--header_procent: 0.10;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {	
+	box-sizing: border-box;
+	font-family: "Trebuchet MS", sans-serif;
+}
+
+/* default block */
+
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title_main {
+	font-size: 50px;
+	letter-spacing: 10px;
+	font-weight: 700;
+	color: #2E86C1;
+}
+
+.subtitle {
+	font-size: 20px;
+	letter-spacing: 1px;
+	color: #aaa;
+}
