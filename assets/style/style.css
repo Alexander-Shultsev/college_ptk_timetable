@@ -5,28 +5,31 @@
 }
 
 
-/* Header */
-
-.main_header {
-	width: 100%;
-	height: calc((100vh - var(--footer_height)) * var(--header_procent));
-}
-
-
 /* Мain */
 
 main {
-	height: calc((100vh - var(--footer_height)) *  (1 - var(--header_procent)));
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: calc(100% * (1 - var(--footer_height)));
+}
+
+.timetable__header {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	width: 100%;
+	height: calc(100% * var(--header_height));
 }
  
-.timetable {
-	padding: 0 20%;
-	height: calc(100% - var(--class_heigth));
+.timetable__list {
+	height: calc(100% *  var(--timetable_img_height));
 	overflow: scroll;
 }
 
 .timetable__class {
 	height: 100%;
+	margin: 0 20%;
 	display: none;
 }
 
@@ -40,19 +43,25 @@ main {
 
 .class {
 	display: flex;
-	height: var(--class_heigth);
+	height: calc(100% * var(--class_heigth));
 	padding: 0 var(--class_btn_margin);
 }
 
 .class__btn {
-	background: var(--c_main);
 	width: calc(100% / var(--count_class));
-
+	
 	border: var(--class_btn_margin) solid var(--c_white);
+	border-top: none;
 	border-bottom: none;
-
+	
 	font-size: 30px;
 	font-weight: 700;
+	background: var(--c_gray_light);
+	color: var(--c_black);
+}
+
+.class__btn--active {
+	background: var(--c_main);
 	color: var(--c_white);
 }
 
@@ -64,5 +73,5 @@ footer {
 	justify-content: right;
 	align-items: center;
 	padding: 0 calc(var(--class_btn_margin) * 2);
-	height: var(--footer_height);
+	height: calc(100% * var(--footer_height));
 }
