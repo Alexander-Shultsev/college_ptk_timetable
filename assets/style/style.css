@@ -4,6 +4,7 @@
 	height: 100vh;
 }
 
+
 /* Header */
 
 .main_header {
@@ -20,13 +21,39 @@ main {
  
 .timetable {
 	padding: 0 20%;
-	height: 100%;
+	height: calc(100% - var(--class_heigth));
 	overflow: scroll;
+}
+
+.timetable__class {
+	height: 100%;
+	display: none;
+}
+
+.show {
+	display: flex;
 }
 
 .timetable__img {
 	height: 100%;
-	/* width: 3000px; */
+}
+
+.class {
+	display: flex;
+	height: var(--class_heigth);
+	padding: 0 var(--class_btn_margin);
+}
+
+.class__btn {
+	background: var(--c_main);
+	width: calc(100% / var(--count_class));
+
+	border: var(--class_btn_margin) solid var(--c_white);
+	border-bottom: none;
+
+	font-size: 30px;
+	font-weight: 700;
+	color: var(--c_white);
 }
 
 
@@ -36,6 +63,6 @@ footer {
 	display: flex;
 	justify-content: right;
 	align-items: center;
-	padding: 0 2%;
+	padding: 0 calc(var(--class_btn_margin) * 2);
 	height: var(--footer_height);
 }

@@ -1,25 +1,22 @@
+@import 'root.css';
+
 ::-webkit-scrollbar {
 	width: 0;
 	height: 0;
 }
 
-:root {
-	--footer_height: 50px;
-	--header_procent: 0.20;
-}
-
 * {
 	margin: 0;
 	padding: 0;
+	font-family: "Trebuchet MS", sans-serif;
 }
 
 body {	
 	box-sizing: border-box;
-	font-family: "Trebuchet MS", sans-serif;
 }
 
-/* default block */
 
+/* Default block */
 
 .center {
 	display: flex;
@@ -31,11 +28,11 @@ body {
 	font-size: 50px;
 	letter-spacing: 10px;
 	font-weight: 700;
-	color: #2E86C1;
+	color: var(--c_main);
 }
 
 .subtitle {
-	font-size: 15px;
+	font-size: 10px;
 	letter-spacing: 1px;
-	color: #aaa;
+	color: var(--c_gray);
 }

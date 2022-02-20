@@ -1,0 +1,17 @@
+:root {
+    /* height */
+	--footer_height: 50px;
+	--header_procent: 0.15;
+    --class_heigth: 300px;
+    
+    /* color */
+    --c_main: #3498DB;
+    --c_gray: #aaa;
+    --c_white: #fff;
+
+    /* count */
+    --count_class: 4;
+
+    /* other */
+    --class_btn_margin: 7px;
+}
